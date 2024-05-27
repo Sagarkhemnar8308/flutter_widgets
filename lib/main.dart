@@ -6,6 +6,8 @@ import 'package:flutter_widget/firebase_options.dart';
 import 'package:flutter_widget/remoteconfig.dart';
 import 'package:get/get.dart';
 
+import 'rippleanimation/rippleanimation.dart';
+
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
       locale: Locale('zh'),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: RemoteConfigtest(),
+      home: RippleAnimation(),
     );
   }
 }
